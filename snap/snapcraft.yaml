@@ -1,0 +1,63 @@
+name: pom-pom
+version: "git"
+adopt-info: pom-pom
+icon: assets/packaging/com.tac.pom_pom.svg
+
+base: core24
+confinement: strict
+grade: stable
+compression: lzo
+
+apps:
+  pom-pom:
+    command: pom_pom
+    common-id: com.tac.pom_pom
+    extensions: [gnome]
+    plugs:
+      - audio-playback
+
+parts:
+  pom-pom:
+    source: .
+    source-type: git
+    plugin: flutter
+    flutter-channel: stable
+    flutter-target: lib/main.dart
+    parse-info: [usr/share/metainfo/com.tac.pom_pom.metainfo.xml]
+    override-build: |
+      craftctl default
+      PACKAGING_DIR="$SNAPCRAFT_PART_SRC/assets/packaging"
+      METAINFO_DIR="$CRAFT_PART_INSTALL/usr/share/metainfo"
+      APPLICATIONS_DIR="$CRAFT_PART_INSTALL/usr/share/applications"
+      ICONS_DIR="$CRAFT_PART_INSTALL/usr/share/icons/hicolor/scalable/apps"
+      mkdir -p "$METAINFO_DIR" "$APPLICATIONS_DIR" "$ICONS_DIR"
+      cp "$PACKAGING_DIR/com.tac.pom_pom.metainfo.xml" "$METAINFO_DIR"
+      cp "$PACKAGING_DIR/com.tac.pom_pom.desktop" "$APPLICATIONS_DIR"
+      cp "$PACKAGING_DIR/com.tac.pom_pom.svg" "$ICONS_DIR"
+      sed -i 's|Icon=.*|Icon=usr/share/icons/hicolor/scalable/apps/com.tac.pom_pom.svg|' "$APPLICATIONS_DIR/com.tac.pom_pom.desktop"
+    prime:
+      - -usr/share/metainfo
+
+  cleanup:
+    after: [pom-pom]
+    plugin: nil
+    build-snaps:
+      - core24
+      - gtk-common-themes
+      - gnome-46-2404
+      - mesa-2404
+
+    override-prime: |
+      set -eux
+      for snap in "core24" "gtk-common-themes" "gnome-46-2404" "mesa-2404"; do
+        cd "/snap/$snap/current" && find . -type f,l -exec rm -f "$SNAPCRAFT_PRIME/{}" \;
+      done
+
+# Limit architectures to ones Flutter supports.
+platforms:
+  amd64:
+  arm64:
+
+lint:
+  ignore:
+    - library: [lib/libminisound_ffi.so]

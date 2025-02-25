@@ -1,0 +1,7 @@
+app_id: com.tac.pom_pom
+publisher: Tom Chisholm
+publisher_url: 
+display_name: Pom Pom
+create_desktop_icon: true
+locales:
+  - en

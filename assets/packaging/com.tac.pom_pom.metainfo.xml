@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.tac.pom_pom</id>
+ 
+  <name>PomPom</name>
+  <summary>A simple pomodoro timer.</summary>
+  <description>
+    <p>Features:</p> 
+    <ul>
+      <li>Focus/Breaks/Rounds from 1 to 60.</li>
+      <li>Adjustable audible notification on state change.</li>
+    </ul> 
+  </description>
+  <url type="homepage">https://www.github.com/tomchis/pom_pom</url>
+  <url type="donation">https://www.ko-fi.com/I3I71BCGSU</url>
+ 
+  <launchable type="desktop-id">com.tac.pom_pom.desktop</launchable>
+  <icon type="local">com.tac.pom_pom</icon>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/tomchis/pom_pom/main/assets/screenshots/main.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/tomchis/pom_pom/main/assets/screenshots/settings.png</image>
+    </screenshot>
+  </screenshots>
+ 
+  <metadata_license>MIT</metadata_license>
+  <project_license>GPL-3.0-only</project_license>
+ 
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </supports>
+</component>

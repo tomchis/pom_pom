@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512.0px"
+   height="512.0px"
+   viewBox="0 0 512.0 512.0"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="icon.png"
+   inkscape:export-xdpi="48"
+   inkscape:export-ydpi="48"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview137"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="1"
+     inkscape:cx="168.5"
+     inkscape:cy="216.5"
+     inkscape:window-width="1452"
+     inkscape:window-height="748"
+     inkscape:window-x="-55"
+     inkscape:window-y="67"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid260" />
+  </sodipodi:namedview>
+  <defs
+     id="defs132" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#201a19;fill-opacity:1;stroke:#d4d4d4;stroke-width:1.88282;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5563"
+       width="510.11719"
+       height="510.11719"
+       x="0.94140625"
+       y="0.94140625"
+       ry="85.716423" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#ffb4a9;stroke-width:33.322;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="path4392"
+       cx="256"
+       cy="256"
+       r="205.19191" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:350px;font-family:P052;-inkscape-font-specification:'P052 Italic';fill:none;fill-opacity:1;stroke:none;stroke-width:1.54914;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="123.55843"
+       y="406.66434"
+       id="text4920"
+       transform="scale(1.1174968,0.89485715)"><tspan
+         sodipodi:role="line"
+         id="tspan4918"
+         x="123.55843"
+         y="406.66434"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:350px;font-family:P052;-inkscape-font-specification:'P052 Italic';fill:#ffb4a9;fill-opacity:1;stroke-width:1.54914">P</tspan></text>
+  </g>
+</svg>

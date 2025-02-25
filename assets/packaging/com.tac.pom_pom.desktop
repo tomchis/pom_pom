@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=PomPom
+Comment=A simple pomodoro timer
+Exec=pom_pom
+Icon=com.tac.pom_pom
+Terminal=false
+Type=Application
+Categories=Utilities;

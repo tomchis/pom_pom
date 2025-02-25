@@ -1,0 +1,43 @@
+name: pom_pom
+description: "A pomodoro timer"
+publish_to: "none"
+
+environment:
+  sdk: ">=3.7.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  auto_size_text: ^3.0.0
+  flutter_local_notifications: ^18.0.1
+  flutter_riverpod: ^2.6.1
+  freezed_annotation: ^3.0.0
+  json_annotation: ^4.9.0
+  minisound: ^2.0.2
+  riverpod_annotation: ^2.6.1
+  shared_preferences: ^2.5.2
+  path: any
+  window_manager: ^0.4.3
+  windows_notification: ^1.2.0
+  yaru: ^7.0.0
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.15
+  custom_lint: ^0.7.5
+  freezed: ^3.0.2
+  json_serializable: ^6.9.4
+  riverpod_generator: ^2.6.5
+  riverpod_lint: ^2.6.5
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/change.mp3
+    - assets/icon_small.png

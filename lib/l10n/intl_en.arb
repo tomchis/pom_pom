@@ -1,0 +1,62 @@
+{
+    "@@locale": "en",
+
+    "focus": "Focus",
+    "shortBreak": "Short break",
+    "longBreak": "Long break",
+    "pause": "Pause",
+    "resume": "Resume",
+    "start": "Start",
+    "reset": "Reset",
+    "restartRound": "Restart round",
+    "skipRound": "Skip round",
+    "settings": "Settings",
+
+    "focusMessage": "Begin focusing",
+    "shortBreakMessage": "Take a short break",
+    "longBreakMessage": "Take a long break",
+    "completeMessage": "{state} complete",
+    "@completeMessage": {
+      "placeholders": {
+          "state": {
+              "type": "String"
+            }
+        }
+    },
+    "readyForNextMessage": "Ready for next session",
+
+    "pomodoro": "Pomodoro",
+    "other": "Other",
+    "dismiss": "Dismiss",
+    "focusNum": "Focus: {value}",
+    "@focusNum": {
+      "value": {
+        "type": "int"
+      }
+    },
+    "shortBreakNum": "Short break: {value}",
+    "@shortBreakNum":{
+      "value": {
+        "type": "int"
+      }
+    },
+    "longBreakNum": "Long break: {value}",
+    "@longBreakNum": {
+      "value": {
+        "type": "int"
+      }
+    },
+    "roundsNum": "Rounds: {value}",
+    "@roundsNum": {
+      "value": {
+        "type": "int"
+      }
+    },
+    "notificationVolume": "Notification volume: {value}",
+    "@roundsNum": {
+      "value": {
+        "type": "int"
+      }
+    },
+    "alwaysOnTop": "Always on top:"
+}
