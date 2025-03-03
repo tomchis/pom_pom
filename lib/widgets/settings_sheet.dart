@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pom_pom/l10n/app_localizations.dart';
 import 'package:pom_pom/models/pomodoro.dart';
 import 'package:pom_pom/providers/settings_provider.dart';
+import 'package:pom_pom/util/util.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 const _sectionPaddingTop = 12.0;
@@ -172,23 +173,25 @@ class _SettingsOther extends ConsumerWidget {
               ref.read(settingsNotifierProvider.notifier).volume = v;
             },
           ),
-          _SettingsItem(
-            child: Row(
-              children: [
-                Text(localizations.alwaysOnTop),
-                const SizedBox(width: 5.0),
-                Checkbox(
-                  value: alwaysOnTop,
-                  onChanged: (value) {
-                    if (value != null) {
-                      ref.read(settingsNotifierProvider.notifier).alwaysOnTop =
-                          value;
-                    }
-                  },
-                ),
-              ],
+          if (!Util.isWayland)
+            _SettingsItem(
+              child: Row(
+                children: [
+                  Text(localizations.alwaysOnTop),
+                  const SizedBox(width: 5.0),
+                  Checkbox(
+                    value: alwaysOnTop,
+                    onChanged: (value) {
+                      if (value != null) {
+                        ref
+                            .read(settingsNotifierProvider.notifier)
+                            .alwaysOnTop = value;
+                      }
+                    },
+                  ),
+                ],
+              ),
             ),
-          ),
           SizedBox(height: 30),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
